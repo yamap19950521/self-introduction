@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma Li</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    section{
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    
+    }
+    .photo,.SKILLS{
+      padding:100px;
+      box-shadow: 0 0 15px #ccc;
+    }
+    .photo{
+      background-color: #004075;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 10px 0 0 10px;
+    }
+  
+    .photo img{
+      width: 200px;
+    }
+    .photo p{
+      margin: 10px 0;
+    }
+    h1{
+      font-size: 28px;
+      margin: 10px 0;
+    }
+    h2{
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    hr{
+      color: #ffffff;
+      margin: 0px 20px 20px 20px;
+    }
+    .SKILLS{
+      background-color: #F0F0F0;
+    }
+    .SKILLS>div{
+      margin:30px 20px;
+    }
+    .SKILLS>div>p:nth-child(1){
+      font-weight: 700;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .SKILLS>div>p{
+      margin: 5px 0 0 20px;
+    }
+    .icon{
+      text-align: center;
+    }
+  
+    .icon a{
+      margin: 0 2px;
+      font-size: 25px;
+      color: #004075;
+    }
+    .icon a:hover{
+      color:#026bc2;
+    }
+
+    @media screen and (max-width:768px){
+      section{
+        display:block;
+      }
+      .photo, .SKILLS{
+        padding: 15px;
+        text-align: center;
+      }
+      .photo{
+        border-radius:10px 10px 0 0  ;
+      }
+    
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/95fa52e526.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <div class="photo">
+      <h2>個  人  簡  介</h2>
+      <hr>
+      <img src="./Emma.jpeg" alt="Emma">
+      <h1>李依錚  Emma</h1>
+      <p>27歲</p>
+      <p>輔仁大學<br>商業管理學系</p>
+    </div>
+    <div class="SKILLS">
+      <h2>SKILLS</h2>
+      <div>
+        <p>前端(Frontend)</p>
+        <p>HTML</p>
+        <p>CSS/Sass/Tailwind</p>
+        <p>RWD</p>
+        <p>Bootstrap</p>
+        <p>JavaScript</p>
+        <p>JQuery</p>
+      </div>
+
+      <div>
+        <p>後端(Backend)</p>
+        <p>Ruby on Rails</p>
+      </div>
+
+      <div>
+        <p>其他(Others)</p>
+        <p>Git/GitHub</p>
+        <p>Heroku</p>
+        <p>PostgreSQL</p>
+        <p>SQL Server</p>
+      </div>
+
+      <div class="icon">
+        <a href="https://github.com/yamap19950521"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/yamap19950521/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://medium.com/@emmawowo"><i class="fa-brands fa-medium"></i></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
